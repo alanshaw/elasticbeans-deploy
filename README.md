@@ -30,6 +30,11 @@
             "Effect": "Allow",
             "Action": "elasticbeanstalk:UpdateEnvironment",
             "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377:environment/Default-Environment/My First Elastic Beanstalk Application"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "cloudformation:GetTemplate",
+            "Resource": "arn:aws:cloudformation:eu-west-1:431258931377:*"
         }
     ]
 }

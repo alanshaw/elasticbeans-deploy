@@ -67,6 +67,11 @@
                 "autoscaling:ResumeProcesses"
             ],
             "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "elasticloadbalancing:*",
+            "Resource": "arn:aws:elasticloadbalancing:eu-west-1:431258931377:*"
         }
     ]
 }

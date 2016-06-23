@@ -1,5 +1,5 @@
 const config = require('rc')('elasticbeans', {
-  secret: 'SECRETS'
+  secret: 'SECRETS2'
 })
 
 const port = process.env.PORT || 3000

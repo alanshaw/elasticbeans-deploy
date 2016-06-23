@@ -1,7 +1,8 @@
 const config = require('rc')('elasticbeans', {
-  secret: 'SECRETS',
-  port: 3000
+  secret: 'SECRETS'
 })
+
+const port = process.env.PORT || 3000
 
 const Http = require('http')
 
@@ -10,7 +11,7 @@ const server = Http.createServer((req, res) => {
   res.end()
 })
 
-server.listen(config.port)
+server.listen(port)
 
 // Put a friendly message on the terminal
-console.log('Server running at http://127.0.0.1:' + config.port + '/')
+console.log('Server running at http://127.0.0.1:' + port + '/')

@@ -23,6 +23,11 @@
         },
         {
             "Effect": "Allow",
+            "Action": "elasticbeanstalk:UpdateEnvironment",
+            "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377"
+        },
+        {
+            "Effect": "Allow",
             "Action": "elasticbeanstalk:*",
             "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377:*"
         }
@@ -47,8 +52,8 @@ $ travis setup elasticbeanstalk
 Access key ID: AKIAIYE5GN7RNPZSZELA
 Secret access key: ****************************************
 Elastic Beanstalk region: |us-east-1| eu-west-1
-Elastic Beanstalk application name: My First Elastic Beanstalk Application
-Elastic Beanstalk environment to update: Default-Environment
+Elastic Beanstalk application name: Default-Environment
+Elastic Beanstalk environment to update: e-egar7awqmx
 Encrypt secret access key? |yes|
 Deploy only from alanshaw/elasticbeans-deploy? |yes|
 ```
@@ -56,3 +61,8 @@ Deploy only from alanshaw/elasticbeans-deploy? |yes|
 * Put the S3 bucket name in the deploy config `bucket_name: elasticbeanstalk-eu-west-1-431258931377`
 
 * Done?
+
+---
+
+* elasticbeanstalk:CreateApplicationVersion
+* elasticbeanstalk:UpdateEnvironment

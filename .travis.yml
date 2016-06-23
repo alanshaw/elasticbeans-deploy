@@ -9,5 +9,6 @@ deploy:
   region: eu-west-1
   app: Default-Environment
   env: e-egar7awqmx
+  bucket_name: elasticbeanstalk-eu-west-1-431258931377
   on:
     repo: alanshaw/elasticbeans-deploy

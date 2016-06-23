@@ -57,10 +57,7 @@
         },
         {
             "Effect": "Allow",
-            "Action": [
-                "cloudformation:GetTemplate",
-                "cloudformation:ListStackResources"
-            ],
+            "Action": "cloudformation:UpdateStack",
             "Resource": "arn:aws:cloudformation:eu-west-1:431258931377:*"
         }
     ]

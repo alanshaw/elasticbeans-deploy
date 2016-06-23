@@ -62,8 +62,11 @@
         },
         {
             "Effect": "Allow",
-            "Action": "autoscaling:*",
-            "Resource": "arn:aws:autoscaling:eu-west-1:431258931377:*"
+            "Action": [  
+                "autoscaling:SuspendProcesses",
+                "autoscaling:ResumeProcesses"
+            ],
+            "Resource": "*"
         }
     ]
 }

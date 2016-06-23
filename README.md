@@ -23,13 +23,13 @@
         },
         {
             "Effect": "Allow",
-            "Action": "elasticbeanstalk:UpdateEnvironment",
-            "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377"
+            "Action": "elasticbeanstalk:*",
+            "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377:*"
         },
         {
             "Effect": "Allow",
-            "Action": "elasticbeanstalk:*",
-            "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377:*"
+            "Action": "elasticbeanstalk:UpdateEnvironment",
+            "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377:environment/Default-Environment/My First Elastic Beanstalk Application"
         }
     ]
 }
@@ -52,8 +52,8 @@ $ travis setup elasticbeanstalk
 Access key ID: AKIAIYE5GN7RNPZSZELA
 Secret access key: ****************************************
 Elastic Beanstalk region: |us-east-1| eu-west-1
-Elastic Beanstalk application name: Default-Environment
-Elastic Beanstalk environment to update: e-egar7awqmx
+Elastic Beanstalk application name: My First Elastic Beanstalk Application
+Elastic Beanstalk environment to update: Default-Environment
 Encrypt secret access key? |yes|
 Deploy only from alanshaw/elasticbeans-deploy? |yes|
 ```

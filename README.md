@@ -57,8 +57,13 @@
         },
         {
             "Effect": "Allow",
-            "Action": "cloudformation:UpdateStack",
+            "Action": "cloudformation:*",
             "Resource": "arn:aws:cloudformation:eu-west-1:431258931377:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "autoscaling:*",
+            "Resource": "arn:aws:autoscaling:eu-west-1:431258931377:*"
         }
     ]
 }

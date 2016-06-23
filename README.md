@@ -2,6 +2,34 @@
 
 * Create an elasticbeanstalk Node.js app
 * Get the name of the S3 bucket it creates
+* Create IAM user and group
+* Add the following inline DeployPolicy:
+
+```
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::elasticbeanstalk-eu-west-1-431258931377",
+                "arn:aws:s3:::elasticbeanstalk-eu-west-1-431258931377/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "elasticbeanstalk:CreateApplicationVersion",
+            "Resource": "arn:aws:elasticbeanstalk:eu-west-1:431258931377:*"
+        }
+    ]
+}
+```
+
 * Create a `.travis.yml` add the following:
 
 ```

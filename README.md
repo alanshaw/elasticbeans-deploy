@@ -11,11 +11,31 @@
         {
             "Effect": "Allow",
             "Action": [
-                "s3:ListAllMyBuckets",
-                "s3:GetObject"
+                "elasticbeanstalk:Check*",
+                "elasticbeanstalk:Describe*",
+                "elasticbeanstalk:List*",
+                "elasticbeanstalk:RequestEnvironmentInfo",
+                "elasticbeanstalk:RetrieveEnvironmentInfo",
+                "ec2:Describe*",
+                "elasticloadbalancing:Describe*",
+                "autoscaling:Describe*",
+                "cloudwatch:Describe*",
+                "cloudwatch:List*",
+                "cloudwatch:Get*",
+                "s3:Get*",
+                "s3:List*",
+                "sns:Get*",
+                "sns:List*",
+                "cloudformation:Describe*",
+                "cloudformation:Get*",
+                "cloudformation:List*",
+                "cloudformation:Validate*",
+                "cloudformation:Estimate*",
+                "rds:Describe*",
+                "sqs:Get*",
+                "sqs:List*"
             ],
-            "Resource": "arn:aws:s3:::*"
-
+            "Resource": "*"
         },
         {
             "Effect": "Allow",
@@ -38,8 +58,8 @@
         {
             "Effect": "Allow",
             "Action": [
-              "cloudformation:GetTemplate",
-              "cloudformation:ListStackResources"
+                "cloudformation:GetTemplate",
+                "cloudformation:ListStackResources"
             ],
             "Resource": "arn:aws:cloudformation:eu-west-1:431258931377:*"
         }

@@ -10,8 +10,12 @@
     "Statement": [
         {
             "Effect": "Allow",
-            "Action": "s3:ListAllMyBuckets",
+            "Action": [
+                "s3:ListAllMyBuckets",
+                "s3:GetObject"
+            ],
             "Resource": "arn:aws:s3:::*"
+
         },
         {
             "Effect": "Allow",

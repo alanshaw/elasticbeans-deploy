@@ -8,7 +8,7 @@ deploy:
     secure: UjTVVKvsA29Rt4ti2qhj9cXjP6rPTCazFgMsKFRXJlnQknpVOqRpm5RSvp1Ucsjzw4qVYLw0x4aJ/Bn/yvoSlBVbZ7nMIyZ6ChgjE3GjuoQTKQY6FVoUNNOYBf92lqQK3S/MtII0pTkbda4ekktMhPrpw6tx8RzUUVwGkKRaG67eBix2K6i62BqwgaAd/CKm0+WUFuzjNkDKW1vJXI+4JHHx5hFklRNDnYOPoyRr7Ie+nW1wVIGKv55braAsoNfqTFuD8N09k82K6M6+LWsG890QG2Q1xbfsa+fGKoj6N3Wcnh9L9y/GubTtdtfTNEHAl2IbywFt7M9ImfqhyizcqpJOLcxN4g9/HjCKDlUH36P9FO3rT17XrTrB1+VQ+SudQxmL1j1jdArmoWBq6LwyOjlWvAUY+cX7LXsL/WaZN2pOVAYkTHv3D9xuB1lajshv/bNsghLxYOWql2VS8Ulxm7hfbbVgkYKjimr+WNiLhYs0loz2jPI8XhPR0doE+NoHP5IA/Vnt+6+z2tDgK54+d6pVtOvnHdReTqtRWSgRTuywr43dp+JD/65K2co67HBUn4gz8OCetctEiLMBoKYLv0cvN8qdq+C7uPMIPtRTmIMsj4TOu919aSuEGBusPNj9uxuGqerGfg64TfzttMLAh4T3yXZGmmIDLLpRQ84eP7o=
   region: eu-west-1
   app: "My First Elastic Beanstalk Application"
-  env: Default-Environment
+  env: e-egar7awqmx
   bucket_name: elasticbeanstalk-eu-west-1-431258931377
   on:
     repo: alanshaw/elasticbeans-deploy
